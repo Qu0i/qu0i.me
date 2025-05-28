@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qu0i | Cybersecurity Student</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: url('bg.gif') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #e0e0e0;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0);
+      padding: 2rem;
+      border-radius: 16px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    .card img {
+      border-radius: 50%;
+      max-width: 120px;
+      margin-bottom: 1rem;
+    }
+
+    .card h1 {
+      color: #00e0d1;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .quote {
+      margin: 1rem 0;
+      font-style: italic;
+      color: #00e0d1;
+      font-size: 0.95rem;
+      border-left: 3px solid #00e0d1;
+      padding-left: 0.8rem;
+      opacity: 0.85;
+    }
+
+    .skills span {
+      background-color: #222;
+      color: #00e0d1;
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      margin: 0.2rem;
+      display: inline-block;
+      font-size: 0.9rem;
+    }
+
+    .links {
+      margin-top: 1.5rem;
+    }
+
+    .links a {
+      margin: 0 0.5rem;
+      display: inline-block;
+      transition: transform 0.2s, filter 0.2s;
+    }
+
+    .links img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .links a:hover {
+      transform: scale(1.2);
+      filter: drop-shadow(0 0 6px #00e0d1);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="avatar.jpg" alt="Qu0i Avatar">
+    <h1>Qu0i</h1>
+    <p>
+        Hey, I'm into C and Python.
+    </p>
+
+    <!-- Цитата -->
+    <blockquote class="quote" id="quote"></blockquote>
+
+    <div class="skills">
+      <span>C</span>
+      <span>Python</span>
+    </div>
+
+    <div class="links">
+      <a href="mailto:qu0i@proton.me" title="My Email">
+        <img src="mail.png" alt="Mail">
+      </a>
+      <a href="https://discord.com/users/643056955086209057" title="My Discord" target="_blank">
+        <img src="discord.png" alt="Discord">
+      </a>
+      <a href="https://github.com/Qu0i" title="My GitHub">
+        <img src="github.png" alt="GitHub">
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const quotes = [
+      "«The quieter you become, the more you can hear.»",
+      "«Carpe diem, memento mori.»",
+      "«The game has no meaning if you don't strive to win.»",
+      "«Should I talk slower like you're retarded?»"
+    ];
+    const quoteEl = document.getElementById("quote");
+    quoteEl.textContent = quotes[Math.floor(Math.random() * quotes.length)];
+  </script>
+</body>
+</html>
