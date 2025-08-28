@@ -1,0 +1,27 @@
+.terminal-input {
+  display: flex;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+  background: transparent;
+  border-top: 1px solid var(--border, #444);
+  padding: 8px 12px;
+}
+
+.prompt {
+  color: var(--muted, #888);
+  margin-right: 6px;
+}
+
+#cmd {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text, #fff);
+  font: inherit;
+  flex: 1;
+}
+
+#output {
+  font-family: "JetBrains Mono", monospace;
+  padding: 8px 12px;
+}

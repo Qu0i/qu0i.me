@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Qu0i's own site">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Qu0i · Home</title>
+  <link rel="icon" href="assets/img/letter-q.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/homepage.css">
+  <link rel="stylesheet" href="assets/css/terminal.css"
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand">qu0i@me:~#</a>
+    <nav>
+      <ul class="nav-list">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <img src="assets/img/avatar.png" alt="Avatar" class="avatar">
+  <h1 id="typed-text" class="mono-text"></h1>
+  <p>Self-taught developer and InfoSec student.</p>
+
+  <div id="output"></div>
+  <div class="terminal-input">
+    <span class="prompt">qu0i@me:~#</span>
+    <input type="text" id="cmd" autocomplete="off" />
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/terminal.js"></script>
+</body>
+</html>
