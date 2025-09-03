@@ -143,12 +143,28 @@ body {
   font-family: 'JetBrains Mono', monospace;
 }
 
-code, pre {
-  font-family: "JetBrains Mono", monospace;
-  background: #2a2a2a;
-  padding: 0.2em 0.4em;
-  border-radius: 6px;
+pre, code {
+  font-family: "Fira Code", monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
+
+pre {
+  background-color: #1e1e2e; /* тёмный фон */
+  color: #cdd6f4;            /* текст */
+  padding: 12px 16px;
+  border-radius: 8px;
+  overflow-x: auto;           /* скролл для длинных строк */
+  margin: 1em 0;
+}
+
+code {
+  background-color: #313244;  /* фон для inline-кода */
+  color: #f5e0dc;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
 
 @media (max-width: 960px){
   .about-grid{ grid-template-columns: 1fr; }

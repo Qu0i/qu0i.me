@@ -6,5 +6,14 @@
     "description": "Small wrapper around yt-dlp providing a simplified terminal UI for downloading videos and playlists with presets and quality selection.",
     "tech": ["Python", "CLI", "yt-dlp"],
     "repo": "https://github.com/Qu0i/quick-loader"
-  }
+  },
+
+  {
+  "id": "quill",
+  "title": "Quill",
+  "short": "CLI toolkit for classical ciphers (C)",
+  "description": "Command-line utility written in C for experimenting with classical cryptographic algorithms. Currently supports Caesar cipher decryption, with plans to expand to additional ciphers. Designed as a lightweight learning and demonstration tool.",
+  "tech": ["C", "CLI", "Cryptography"],
+  "repo": "https://github.com/Qu0i/Quill"
+}
 ]
