@@ -1,14 +1,5 @@
 [
   {
-    "id": "quick-loader",
-    "title": "Quick-Loader",
-    "short": "Terminal wrapper for yt-dlp (Python)",
-    "description": "Small wrapper around yt-dlp providing a simplified terminal UI for downloading videos and playlists with presets and quality selection.",
-    "tech": ["Python", "CLI", "yt-dlp"],
-    "repo": "https://github.com/Qu0i/quick-loader"
-  },
-
-  {
   "id": "quill",
   "title": "Quill",
   "short": "CLI toolkit for classical ciphers (C)",
