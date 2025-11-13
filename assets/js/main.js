@@ -1,25 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const text = "Hi, I’m Qu0i.";
-  const speed = 100;
-  let i = 0;
+  function typeText(element, text, speed = 100) {
+    element.textContent = "";
+    let i = 0;
 
-  function typeWriter() {
-    if (i < text.length) {
-      document.getElementById("typed-text").textContent += text.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
+    function type() {
+      if (i < text.length) {
+        element.textContent += text.charAt(i);
+        i++;
+        setTimeout(type, speed);
+      }
     }
+
+    type();
   }
 
-  typeWriter();
-
-
-  const quotes = [
-    "Keep it simple.",
-    "Code. Sleep. Repeat.",
-    "Freedom in every line.",
-    "Minimalism is clarity."
-  ];
-  const quoteEl = document.getElementById("quote");
-  quoteEl.textContent = quotes[Math.floor(Math.random() * quotes.length)];
+  const greeting = document.getElementById("greeting");
+  typeText(greeting, "Hi, I'm Qu0i.", 100);
 });

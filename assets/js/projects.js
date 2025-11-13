@@ -29,7 +29,7 @@ function selectProject(id, el) {
   document.querySelectorAll('.menu-item').forEach(x => x.classList.remove('active'));
   if (el) el.classList.add('active');
 
-  fetch("assets/data/projects.json")
+  fetch("../assets/data/projects.json")
     .then(res => res.json())
     .then(projects => {
       const p = projects.find(x => x.id === id);
@@ -49,7 +49,7 @@ function selectProject(id, el) {
     });
 }
 
-fetch("assets/data/projects.json")
+fetch("../assets/data/projects.json")
   .then(res => res.json())
   .then(projects => {
     projects.forEach(p => menu.appendChild(makeMenuItem(p)));

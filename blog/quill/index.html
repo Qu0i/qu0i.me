@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Менеджер паролей на C · Blog</title>
+  <link rel="icon" href="../../assets/img/letter-q.png" type="image/png">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/blog.css">
+</head>
+
+<body data-page="post">
+  <header class="navbar">
+    <a class="brand" id="prompt">
+      qu0i@me:~ # cd <span id="typed"></span><span class="cursor"></span>
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="../../index.html">home</a></li>
+        <li><a href="../../about.html">about</a></li>
+        <li><a href="../../projects.html">projects</a></li>
+        <li><a class="active" href="../blog.html">blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="blog-detail">
+      <h2>🔐 Quill: My First Step into Cryptography with C</h2>
+      <p class="meta">03 Sep 2025</p>
+      <p>
+      <h1>Introduction</h1>
+      I recently wanted to improve my C programming skills, so I decided to try my hand at classical cryptography.
+      That’s how my small project was born - a utility for decrypting text encrypted with various ciphers. <br>
+      <i>Currently, it only supports the Caesar cipher, but I will update it and add more ciphers.</i>
+      </p>
+
+      <h1>What is the Caesar cipher?</h1>
+      <p>
+        The Caesar cipher is one of the simplest encryption techniques. You take a letter and shift it along the
+        alphabet by a fixed number. <br>For example, with shift = 3:
+      </p>
+      <code>A → D</code> <br>
+      <code>B → E</code> <br>
+      <code>C → F</code>
+
+      <p>And so on for the entire text.</p>
+
+      <h1>How I approached the implementation</h1>
+      <p>
+        To write a working decryptor, I had to solve a few smaller problems:
+      <ul>
+        <li>Check if a character is a letter (I used <code>isalpha</code> for this).</li>
+        <li>Work with ASCII codes to apply shifts correctly.</li>
+        <li>Handle uppercase and lowercase letters separately.</li>
+      </ul>
+      </p>
+
+      <h1>Takeaways</h1>
+      <p>
+        This project helped me better understand:
+      <ul>
+        <li>how to manipulate characters and strings in C,</li>
+        <li>how ASCII codes work,</li>
+        <li>why standart functions like <code>isalpha</code> and <code>isupper</code> are so useful.</li>
+      </ul>
+
+      <i>Next step: I want to expand this utility, add more ciphers, and make it more universal.</i>
+      </p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div
+      style="display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto;padding:10px 20px;color:var(--muted);">
+      <div>© 2025 Qu0i <br>Built with 🤍</div>
+      <div style="display:flex;gap:14px;align-items:center;">
+        <a href="https://github.com/Qu0i" target="_blank"><i class="fa-brands fa-square-github fa-2xl"
+            style="color: #ffffff;"></i></a>
+        <a href="mailto:quoiteam.com@gmail.com"><i class="fa-solid fa-at fa-2xl" style="color: #ffffff;"></i></a>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <script src="../../assets/js/terminal_animation.js"></script>
+</body>
+</html>

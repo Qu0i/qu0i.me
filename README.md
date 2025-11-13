@@ -10,10 +10,10 @@ If you notice any bugs or issues, feel free to let me know.
 
 ## 📄 Pages
 
-- **Home** – Simple homepage. Might add something useful here later (suggestions welcome).  
-- **About** – Info about me, my learning journey, and goals.  
-- **Projects** – Open-source projects, experiments, and coding challenges.  
-- **Blog** – Articles about programming, Linux, and personal experiences (expect more later).
+- `home` – Simple homepage. Might add something useful here later (suggestions welcome).  
+- `about` – Info about me, my learning journey, and goals.  
+- `projects` – Open-source projects, experiments, and coding challenges.  
+- `blog` – Articles about programming, Linux, and personal experiences (expect more later).
 
 
 ---

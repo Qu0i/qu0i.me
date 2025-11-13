@@ -1,5 +1,12 @@
-* { box-sizing: border-box; }
-html, body { height: 100%; }
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Inter", "JetBrains Mono", Segoe UI, Roboto, sans-serif;
@@ -8,7 +15,7 @@ body {
   color: #e9e9ea;
 }
 
-:root{
+:root {
   --bg: #0f1012;
   --card: #151619;
   --border: #25262b;
@@ -16,12 +23,12 @@ body {
   --muted: #a7a8ad;
   --accent: #e9e9ea;
   --radius: 18px;
-  --shadow: 0 10px 24px rgba(0,0,0,.25);
+  --shadow: 0 10px 24px rgba(0, 0, 0, .25);
   --maxw: 1100px;
   --navh: 64px;
 }
 
-.navbar{
+.navbar {
   position: fixed;
   font-family: 'JetBrains Mono', monospace;
   inset: 0 0 auto 0;
@@ -30,25 +37,28 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  background: rgba(18,19,22,.6);
+  background: rgba(18, 19, 22, .6);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
   z-index: 10;
 }
-.brand{
+
+.brand {
   color: var(--text);
   text-decoration: none;
   font-weight: 700;
   letter-spacing: .4px;
 }
-.nav-list{
+
+.nav-list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   gap: 22px;
 }
-.nav-list a{
+
+.nav-list a {
   color: var(--text);
   text-decoration: none;
   padding: 8px 10px;
@@ -56,38 +66,43 @@ body {
   border: 1px solid transparent;
   transition: .15s ease;
 }
-.nav-list a:hover{
+
+.nav-list a:hover {
   border-color: var(--border);
   background: #181a1f;
 }
-.nav-list a.active{
+
+.nav-list a.active {
   border-color: var(--border);
   background: #1a1c20;
 }
 
-.container{
+.container {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: calc(var(--navh) + 28px) 20px 40px; 
+  padding: calc(var(--navh) + 28px) 20px 40px;
 }
-.about-grid{
+
+.about-grid {
   display: grid;
   grid-template-columns: 320px 1fr;
   gap: 32px;
   align-items: start;
 }
 
-.card{
+.card {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
-.profile-card{
+
+.profile-card {
   padding: 22px;
   text-align: center;
 }
-.avatar{
+
+.avatar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -95,41 +110,50 @@ body {
   border: 2px solid var(--border);
   margin: 6px auto 14px;
 }
-.quote{
+
+.quote {
   margin: 6px 0 14px;
   color: var(--muted);
   font-style: italic;
 }
-.divider{
+
+.divider {
   height: 1px;
   width: 100%;
   background: var(--border);
   margin: 10px 0 16px;
 }
-.tech-icons{
+
+.tech-icons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
   justify-items: center;
 }
-.tech-icons img{
+
+.tech-icons img {
   width: 34px;
   height: 34px;
   opacity: .9;
   transition: .15s ease;
 }
-.tech-icons img:hover{ opacity: 1; transform: translateY(-2px); }
 
-.bio h1{
+.tech-icons img:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.bio h1 {
   margin: 6px 0 10px;
   font-size: 2rem;
 }
-.bio p{
+
+.bio p {
   color: var(--text);
   margin: 0 0 14px;
 }
 
-.footer{
+.footer {
   max-width: var(--maxw);
   margin: 20px auto 40px;
   padding: 0 20px;
@@ -143,31 +167,60 @@ body {
   font-family: 'JetBrains Mono', monospace;
 }
 
-pre, code {
+pre,
+code {
   font-family: "Fira Code", monospace;
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
 pre {
-  background-color: #1e1e2e; /* тёмный фон */
-  color: #cdd6f4;            /* текст */
+  background-color: #1e1e2e;
+  /* тёмный фон */
+  color: #cdd6f4;
+  /* текст */
   padding: 12px 16px;
   border-radius: 8px;
-  overflow-x: auto;           /* скролл для длинных строк */
+  overflow-x: auto;
+  /* скролл для длинных строк */
   margin: 1em 0;
 }
 
 code {
-  background-color: #313244;  /* фон для inline-кода */
+  background-color: #313244;
+  /* фон для inline-кода */
   color: #f5e0dc;
   padding: 2px 5px;
   border-radius: 4px;
 }
 
 
-@media (max-width: 960px){
-  .about-grid{ grid-template-columns: 1fr; }
-  .profile-card{ order: 1; }
-  .bio{ order: 2; }
+@media (max-width: 960px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    order: 1;
+  }
+
+  .bio {
+    order: 2;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 0.9em;
+  background: #fff;
+  margin-left: 3px;
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }

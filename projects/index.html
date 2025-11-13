@@ -5,20 +5,22 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>Qu0i · Projects</title>
-  <link rel="icon" href="assets/img/letter-q.png" type="image/png">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/projects.css">
-  <link rel="stylesheet" href="assets/css/buttons.css">
+  <link rel="icon" href="../assets/img/letter-q.png" type="image/png">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/projects.css">
+  <link rel="stylesheet" href="../assets/css/buttons.css">
 </head>
-<body>
+<body data-page="projects">
   <header class="navbar">
-    <a class="brand">qu0i@me:~/projects#</a>
+    <a class="brand" id="prompt">
+      qu0i@me:~/projects # cd <span id="typed"></span><span class="cursor"></span>
+    </a>
     <nav>
       <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a class="active" href="projects.html">Projects</a></li>
-        <li><a href="blog/blog.html">Blog</a></li>
+        <li><a href="../index.html">home</a></li>
+        <li><a href="/about/">about</a></li>
+        <li><a class="active" href="/projects/">projects</a></li>
+        <li><a href="/blog/">blog</a></li>
 
       </ul>
     </nav>
@@ -45,12 +47,14 @@
     <div style="display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto;padding:10px 20px;color:var(--muted);">
       <div>© 2025 Qu0i <br>Built with 🤍</div>
       <div style="display:flex;gap:14px;align-items:center;">
+        <a href="https://github.com/Qu0i/qu0i.me/issues"><i class="fa fa-bug fa-xl" aria-hidden="true" style="color: #ffffff;"></i></a>
         <a href="https://github.com/Qu0i" target="_blank"><i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i></a>
         <a href="mailto:quoiteam.com@gmail.com"><i class="fa-solid fa-at fa-2xl" style="color: #ffffff;"></i></a>
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/projects.js"></script>
+  <script src="../assets/js/projects.js"></script>
+  <script src="../assets/js/terminal_animation.js"></script>
 </body>
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Qu0i · About</title>
+  <link rel="icon" href="../assets/img/letter-q.png" type="image/png">
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/projects.css">
+  <link rel="stylesheet" href="../assets/css/buttons.css">
+</head>
+
+<body data-page="about">
+  <header class="navbar">
+    <a class="brand" id="prompt">
+      qu0i@me:~/about # cd <span id="typed"></span><span class="cursor"></span>
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="../index.html">home</a></li>
+        <li><a class="active" href="/about/">about</a></li>
+        <li><a href="/projects/">projects</a></li>
+        <li><a href="/blog/">blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container about-grid">
+    <aside class="card profile-card">
+      <img class="avatar" src="../assets/img/avatar.png" alt="Avatar" />
+      <p id="quote" class="quote"></p>
+      <div class="divider"></div>
+      <div class="tech-icons">
+        <img src="https://skillicons.dev/icons?i=c" alt="C" title="C" />
+        <img src="https://skillicons.dev/icons?i=cpp" alt="C++" title="C++" />
+        <img src="https://skillicons.dev/icons?i=python" alt="Python" title="Python" />
+        <img src="https://skillicons.dev/icons?i=arduino" alt="Arduino" title="Arduino" />
+        <img src="https://skillicons.dev/icons?i=git" alt="Git" title="Git" />
+        <img src="https://skillicons.dev/icons?i=github" alt="GitHub" title="GitHub" />
+        <img src="https://skillicons.dev/icons?i=linux" alt="Linux" title="Linux" />
+        <img src="https://skillicons.dev/icons?i=neovim" alt="Neovim" title="Neovim" />
+      </div>
+    </aside>
+
+    <section class="bio">
+      <h1 class="mono-text">About Me</h1>
+      <p>
+      <h3> Hi 👋 I’m <b>Qu0i</b>. </h3>
+      I am a second-year student in information security and computer science. <br>
+      I focus on <b>low-level programming</b> and <b>system security</b>, building small tools and experiments mainly in <b>C</b>.
+      In the near future, I plan to expand into <b>C++</b> to strengthen my skills in systems programming and software
+      development.
+      </p>
+      <p>
+        I use <b>Linux</b> as my daily environment and prefer clean, efficient solutions.
+      </p>
+      <p>
+        My goal is to grow as a developer and contribute to open-source projects that make a difference.
+      </p>
+      <p>
+        <b>Expect more experiments and open-source projects soon.</b>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div
+      style="display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto;padding:10px 20px;color:var(--muted);">
+      <div>© 2025 Qu0i <br>Built with 🤍</div>
+      <div style="display:flex;gap:14px;align-items:center;">
+        <a href="https://github.com/Qu0i/qu0i.me/issues"><i class="fa fa-bug fa-xl" aria-hidden="true" style="color: #ffffff;"></i></a>
+        <a href="https://github.com/Qu0i" target="_blank"><i class="fa-brands fa-square-github fa-2xl"
+            style="color: #ffffff;"></i></a>
+        <a href="mailto:quoiteam.com@gmail.com"><i class="fa-solid fa-at fa-2xl" style="color: #ffffff;"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/terminal_animation.js"></script>
+  <script src="../assets/js/random_quote.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,24 +11,29 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="assets/css/homepage.css">
 </head>
-<body>
+
+<body data-page="home">
   <header class="navbar">
-    <a class="brand">qu0i@me:~#</a>
+    <a class="brand" id="prompt">
+      qu0i@me:~ # cd <span id="typed"></span><span class="cursor"></span>
+    </a>
     <nav>
       <ul class="nav-list">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog/blog.html">Blog</a></li>
+        <li><a class="active" href="index.html">home</a></li>
+        <li><a href="/about/">about</a></li>
+        <li><a href="/projects/">projects</a></li>
+        <li><a href="/blog/">blog</a></li>
       </ul>
     </nav>
   </header>
 
   <img src="assets/img/avatar.png" alt="Avatar" class="avatar">
-  <h1 id="typed-text" class="mono-text"></h1>
+  <h1 id="greeting" class="mono-text"></h1>
   <p>Self-taught developer and InfoSec student.</p>
 
   <script src="assets/js/main.js"></script>
   <script src="assets/js/terminal.js"></script>
+  <script src="assets/js/terminal_animation.js"></script>
 </body>
+
 </html>
